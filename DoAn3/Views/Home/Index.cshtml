@@ -1,0 +1,99 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/mainlayout.cshtml";
+}
+
+<section class="banner__img">
+    <div class="grid wide">
+        <div class="row">
+            <div class="col l-3">
+                <div class="banner-img-block">
+                    <div class="banner-img-block-item">
+                        <img  style="width:300px; height:200px" src="https://cdn0.fahasa.com/media/wysiwyg/Thang-5-2020/2-EnterCoupon-310x210.jpg" alt="#">
+                    </div>
+                </div>
+            </div>
+            <div class="col l-3">
+                <div class="banner-img-block">
+                    <div class="banner-img-block-item">
+                        <img  style="width:300px; height:200px" src="https://cdn0.fahasa.com/media/wysiwyg//Thang-5-2020/trangdochoithang5_310x210.jpg" alt="#">
+                    </div>
+                </div>
+            </div>
+            <div class="col l-3">
+                <div class="banner-img-block">
+                    <div class="banner-img-block-item">
+                        <img  style="width:300px; height:200px" src="https://cdn0.fahasa.com/media/wysiwyg/Thang-6-2020/baosalemuaha_b%E1%BB%992_310x210.jpg" alt="#">
+                    </div>
+                </div>
+            </div>
+            <div class="col l-3">
+                <div class="banner-img-block">
+                    <div class="banner-img-block-item">
+                        <img  style="width:300px; height:200px" src="https://cdn0.fahasa.com/media/wysiwyg/Thang-5-2020/CPHV_mainbanner_310x210.jpg" alt="#">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="heading">
+    <div class="grid wide">
+        <div class="row">
+            <div class="col l-12">
+                <div class="flasshale__title">
+                    <img class="flasshale__title-img" src="https://cdn0.fahasa.com/skin/frontend/base/default/images/ico_dealhot.png" alt="">
+                    <span class="flasshale__title-name">DEALS NEWS</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="grid wide" ng-controller="ListProductNews">
+    <div class="row" >
+        <div class="col l-3 flash_sale"ng-repeat="item in listSp|filter:Search">
+            <a class="flash-sale-link" href="/product-{{item.MaSP}}" id="sp7">
+                <div class="flash-sale-warp">
+                    <img src="~/Assets/Index/img/{{item.Anh}}" width="270" height="340" alt="" class="flash-sale__img">
+                </div>
+                <div class="flash-sale__info">
+                    <span class="flash-sale__info-name">{{item.TenSP}}</span>
+                    <span class="flash-sale__info-price">{{item.DonGia | number}} đ</span>
+                    <span class="flash-sale__info-price-old">80 000</span>
+                    <span class="flash-sale__info-progress">Đã Bán 104</span>
+                </div>
+            </a>
+        </div>       
+    </div>
+    
+</div>
+<div class="grid wide">
+    <section class="heading">
+        <div class="grid wide">
+            <div class="col l-12">
+                <div class="flashshale__title">
+                    <img class="flashshale__title-img" src="https://cdn0.fahasa.com/media/wysiwyg/icon-menu/ico_flashsale@3x.png" alt="">
+                    <span class="flashshale__title-name">FLASH SHALE Kết thúc trong 3 ngày</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="grid wide" ng-controller="ListProductNews">
+        <div class="row">
+            <div class="col l-3 flash_sale" ng-repeat="item in listSp">
+                <a class="flash-sale-link" href="/product-{{item.MaSP}}" id="sp7">
+                    <div class="flash-sale-warp" onclick="">
+                        <img src="~/Assets/Index/img/{{item.Anh}}" width="270" height="340" alt="" class="flash-sale__img">
+                    </div>
+                    <div class="flash-sale__info">
+                        <span class="flash-sale__info-name">{{item.TenSP}}</span>
+                        <span class="flash-sale__info-price">{{item.DonGia|number}}</span>
+                        <span class="flash-sale__info-price-old">99000</span>
+                        <span class="flash-sale__info-progress">Đã Bán 96</span>
+                    </div>
+                </a>
+            </div>            
+        </div>
+    </div>
+</div>

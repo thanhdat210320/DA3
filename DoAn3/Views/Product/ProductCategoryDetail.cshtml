@@ -1,0 +1,21 @@
+﻿
+@{
+    ViewBag.Title = "ProductCategoryDetail";
+    Layout = "~/Views/Shared/mainlayout.cshtml";
+}
+
+    <div class="grid wide" ng-controller="ProductCategoryDetailCtrl">
+        <div class="row">
+            <div class="col l-3 sp__vh" ng-repeat="item in listproduct">
+                <a href="/product-{{item.MaSP}}" class="sp__vh-link">
+                    <div class="sp__vh-warp">
+                        <img src="~/Assets/Index/img/{{item.Anh}}" alt=""  style="width:250px; height:300px" class="sp__vh-img">
+                    </div>
+                    <div class="sp__vh-info">
+                        <span class="sp__vh-ten">{{item.TenSP}}</span>
+                        <span class="sp__vh-gia">{{item.DonGia | number}}</span>
+                    </div>
+                </a>
+            </div>
+        </div>       
+    </div>

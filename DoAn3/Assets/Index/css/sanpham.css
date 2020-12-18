@@ -1,0 +1,131 @@
+.sp__vh{
+    position: relative;
+    background-color:var(--white-color);
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+    box-shadow: 0 1px 2px 0 rgba(0,0,0.1);
+    transition: transform linear 0.1s;
+}
+.sp__vh:hover{
+    transform: translateY(-1px);
+    box-shadow: 0 1px 20px 0 rgba(0,0,0.05);
+}
+.sp__vh-link{
+    color: var(--black-color);
+}
+.sp__vh-info{
+    text-align: center;
+}
+.sp__vh-ten{
+    color: black;
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: var(--text-color);
+}
+.sp__vh-gia{
+    color: rgb(219, 17, 17);
+    font-size: 1.6rem;
+    display: block;
+}
+.tuyentap-img{
+    max-width: 100%;
+}
+.sale{
+    max-width: 100%;
+    height: 60px;
+    text-align: center;
+    border-radius: 2px;
+    border: 1px solid rgb(138, 132, 132);
+    background-color: rgb(234, 252, 157);
+    margin-bottom: 10px;
+}
+.sale__title{
+    border: 1px solid #e61631 !important;
+    border-radius: 5px;
+    margin: 10px 5px 5px;
+    line-height: 55px;
+    font-size: 3rem;
+    font-weight: 500;
+    color: #f31717;
+}
+.tuyentap__item{
+    border: 1px solid rgb(138, 132, 132);
+    position: relative;
+    background-color: var(--white-color);
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+    box-shadow: 0 1px 2px 0 rgba(0,0,0.1);
+    transition: transform linear 0.1s;
+    margin-bottom: 10px;
+}
+.tuyentap__item:hover{
+    transform: translateY(-1px);
+    box-shadow: 0 1px 20px 0 rgba(0,0,0.05);
+}
+.tuyentap__info{
+    text-align: center;
+}
+.tuyentap__name{
+    color: black;
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: var(--text-color);
+    text-align: center;
+}
+.tuyentap__gia{
+    color: rgb(219, 17, 17);
+    font-size: 1.8rem;
+    display: block;
+}
+.tuyentap__giacu{
+    color: rgb(145, 143, 143);
+    font-size: 1.4rem;text-decoration: line-through;
+}
+.nxb__i{
+    margin-top: 20px;
+}
+.nxb__img{
+    margin: 1px 1px 1px 1px;
+    border: 1px solid yellowgreen;
+    position: relative;
+    overflow: hidden;
+}
+.nxb__img:hover{
+    transform: scale(0.5);
+    transition: all ease-in-out 0.2s;
+}
+.chitiet{
+    color:var(--black-color);margin-top: 10px;
+}
+.chitiet__trangchu{
+    color: black;
+    font-size: 2.4rem;
+}
+.chitiet__chitiet{
+    color: rgb(219, 17, 17);
+    font-size: 2.4rem;
+}
+.table{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.table-warp{
+    border: 1px solid;
+    text-align: center;
+}
+table{
+    width: 1000px;
+    height: 500px;
+    align-items: center;
+}
+.button-warp{
+    padding: 20px;
+    border: 1px solid;
+}
+button{
+    margin-right: 10px;
+}

@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.table{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.table-warp{
+    border: 1px solid;
+    text-align: center;
+}
+table{
+    width: 600px;
+    height: 200px;
+}
+.button-warp{
+    padding: 20px;
+    border: 1px solid;
+}
+button{
+    margin-right: 10px;
+}

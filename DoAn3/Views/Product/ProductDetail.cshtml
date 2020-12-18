@@ -1,0 +1,64 @@
+﻿
+@{
+    ViewBag.Title = "ProductDetail";
+    Layout = "~/Views/Shared/mainlayout.cshtml";
+}
+<main>
+    <div class="grid wide" ng-controller="ProductDetailCtrl">
+        <div class="row" id="wrap-product" ng-repeat="item in ProductItem">
+            <div class="col l-5">
+                <div class="product-img">
+                    <img src="~/Assets/Index/img/{{item.Anh}}" alt="" class="img">
+                </div>
+                <div class="wrap-btn">
+                    <button type="button" class="btn-add-cart">Thêm vào giỏ hàng</button>
+                    <button type="button" class="btn-buy">Mua ngay</button>
+                </div>
+            </div>
+            <div class="col l-7">
+                <div class="deatil-product">
+                    <h2 class="name-prodcut">
+                        {{item.TenSP}}
+                    </h2>
+                    <div class="product-view">
+                        <div class="product-view-one">
+                            <span>Nhà cung cấp: <span class="product-view--color">FIRST NEW</span></span>
+                            <span>Tác giả:<span class="product-view--color">Dr blair thomas</span> </span>
+                        </div>
+                        <div class="product-view-two">
+                            <span>Nhà xuất bản: <span class="product-view--color">NXB tổng hợp TPHCM</span></span>
+                            <span>Hình thức bìa: <span class="product-view--color">Bìa mềm</span></span>
+                        </div>
+                        <div class="product-icon-start">
+                            <i class="far fa-star start"></i>
+                            <i class="far fa-star start"></i>
+                            <i class="far fa-star start"></i>
+                            <i class="far fa-star start"></i>
+                        </div>
+                        <div class="product-price-wrap">
+                            <span class="price-new">{{item.DonGia|number}} đ</span>
+                        </div>
+                        <div class="expected_delivery">
+                            <span class="expected_delivery-item">thời gian giao hàng</span>
+                            <span>Địa điểm giao hàng</span>
+                        </div>
+                        <div class="product-count">
+                            <label for="">Số lượng:</label>
+                            <div class="count-wrap">
+                                <input type="button" name="" id="giam" value="-">
+                                <input type="text" name="" id="input" value="1">
+                                <input type="button" name="tang" id="tang" value="+">
+                            </div>
+
+                        </div>
+                        <div class="product-even">
+                            <p>Nhập mã FHSAPP - Giảm thêm 30% (tối đa 20K) cho ĐH từ 49K (Áp dụng cho khách hàng mua trên App, không áp dụng cho sách Giáo khoa - Tham khảo và sách Ngoại văn)</p>
+                            <p>Nhập mã FHSAPP06 - Giảm thêm 10% (tối đa 30K) cho ĐH từ 249K (Áp dụng cho khách hàng mua trên App, không áp dụng cho sách Giáo khoa - Tham khảo và sách Ngoại văn)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+

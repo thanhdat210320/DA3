@@ -1,0 +1,158 @@
+
+/* category-title-warp*/
+.category-title{
+    background-color: #E6EBEF;
+    margin-bottom: 30px;
+}
+
+.category-title-warp{
+    display: flex;
+    justify-content: space-between;
+   
+}
+.category-title__page{
+    margin: 10px;
+}
+.category-title__page-dash{
+    color: var(--primary-color);
+}
+.category-title__page-text{
+    color: var(--primary-color);
+}
+.back-to-top {
+    width: 50px;
+    height: 50px;
+    background: rgb(0,0,0,0.7);
+    font-size: 35px;
+    color: whitesmoke;
+    text-align: center;
+    vertical-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    right: 5%;
+    bottom: 20px;
+    margin-left: -25px;
+    cursor: pointer;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 10;
+ }
+ .main{
+     background-color: #f5f5f5f5;
+ }
+ /*code phần mô tả về mua hàng*/
+table{
+    background-color: white;
+    width: 100%;
+    border-collapse:collapse;
+    border: 1px solid #cccaca;
+    border-top: transparent;
+    border-left: transparent;
+    border-right: transparent;
+    margin-bottom: 70px;
+}
+th{
+    padding: 20px;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+tr{
+    border-bottom: 1px solid #cdd3d8;
+    padding: 10px;
+}
+td{
+    text-align: center;
+    padding: 10px;
+}
+td img{
+    width:100px;
+}
+.delete button{
+    background-color: tomato;
+    outline: none;
+    border: none;
+    color: white;
+    padding: 10px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.edit button{
+    background-color: orange;
+    outline: none;
+    border: none;
+    color: white;
+    padding: 10px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.edit button:hover{
+    background-color: rgb(230, 155, 17);
+    transition: all .5s;
+}
+.delete button:hover{
+    background-color: rgb(245, 72, 41);
+    transition: all .5s;
+}
+.total{
+    border-bottom: none;
+    right: 0;
+}
+.home,.buy-now{
+    width: 100px;
+    padding: 10px;
+    outline: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 3px;
+}
+.buy-now a{
+    color: white;
+}
+
+.home{
+    background-color: orange;
+}
+.home a{
+    color: white;
+}
+.buy-now{
+    background-color: tomato;
+}
+.home:hover{
+    background-color: rgb(230, 155, 17);
+    transition: all .5s;
+}
+#totalPrice{
+    color: tomato;
+}
+.price{
+    color: tomato;
+}
+.icon{
+	font-size: 80px;
+	color: rgb(238, 135, 135);
+	position: absolute; 
+	top: 50%;
+	left: 50%;
+	margin-top: -40px;
+	margin-left: -40px;
+}
+@keyframes xoay{
+	from{
+		-ms-transform:rotate(0deg);
+		-moz-transform: rotate(0deg);
+		-o-transform: rotate(0deg);
+		-webkit-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+	to{
+		-ms-transform:rotate(360deg);
+		-moz-transform: rotate(360deg);
+		-o-transform: rotate(360deg);
+		-webkit-transform: rotate(360deg);
+		transform: rotate(360deg);
+	}
+}
