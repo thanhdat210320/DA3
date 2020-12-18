@@ -13,6 +13,7 @@ namespace DoAn3.Controllers
     {
         BookShopDbConText _db = new BookShopDbConText();
         //thay đổi ở đây
+        //dádas
         public ActionResult Index()
         {
             return View();
